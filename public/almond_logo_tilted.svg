@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+  <title>Almond Logo - Tilted Left</title>
+  <g fill="none" stroke="#103B23" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"
+     transform="rotate(-12,150,250)">
+    <!-- Almond outer shape -->
+    <path d="M150 20 C200 120, 250 220, 230 330 C210 430, 150 480, 90 430 C30 380, 50 260, 100 140 C120 80, 135 50, 150 20 Z"/>
+    
+    <!-- Internal natural lines -->
+    <path d="M150 40 C175 110, 195 200, 180 280"/>
+    <path d="M130 60 C110 140, 100 220, 120 300"/>
+    <path d="M170 90 C190 160, 185 240, 160 330"/>
+    <path d="M110 120 C95 200, 115 280, 140 360"/>
+    <path d="M150 150 C160 220, 155 280, 150 360"/>
+  </g>
+</svg>

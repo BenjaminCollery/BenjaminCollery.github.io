@@ -1,21 +1,999 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <title>Nautical Official Dove</title>
+    <meta property="og:title" content="Nautical Official Dove" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <title>Mas de l'Amelier</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
   </head>
   <body>
-    <header>
-    </header>
-      <p>Hello world</p>
-    </main>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
 
-
+      <div class="home-container">
+        <navbar-wrapper class="navbar-wrapper" rootclassname="navbarundefined">
+          <!--Navbar component-->
+          <header class="navbar-container navbarroot-class-name">
+            <header data-thq="thq-navbar" class="navbar-navbar-interactive">
+              <img
+                alt="Company Logo"
+                src="public/screenshot%20from%202025-08-23%2020-40-26-1500h.png"
+                class="navbar-image1"
+              />
+              <div data-thq="thq-navbar-nav" class="navbar-desktop-menu">
+                <nav class="navbar-links1">
+                  <a
+                    href="#Description_principale"
+                    class="thq-link menu-text thq-body-small navbar-link11"
+                  >
+                    <fragment class="home-fragment10">
+                      <span class="home-text10">Le gîte</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="#Equipements"
+                    class="navbar-link21 thq-link menu-text thq-body-small"
+                  >
+                    <fragment class="home-fragment11">
+                      <span class="home-text11">Equipements</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="#Activites"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="navbar-link31 thq-link menu-text thq-body-small"
+                  >
+                    <fragment class="home-fragment12">
+                      <span class="home-text12">Activités</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="#Photos_slider"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="navbar-link41 thq-link menu-text thq-body-small"
+                  >
+                    <fragment class="home-fragment13">
+                      <span class="home-text13">Photos</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="#Contact"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="navbar-link51 thq-link menu-text thq-body-small"
+                  >
+                    <fragment class="home-fragment14">
+                      <span class="home-text14">Contact</span>
+                    </fragment>
+                  </a>
+                </nav>
+              </div>
+              <div data-thq="thq-burger-menu" class="navbar-burger-menu">
+                <svg viewBox="0 0 1024 1024" class="navbar-icon10">
+                  <path
+                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+              <div data-thq="thq-mobile-menu" class="navbar-mobile-menu">
+                <div class="navbar-nav">
+                  <div class="navbar-top">
+                    <img
+                      alt="Company Logo"
+                      src="public/screenshot%20from%202025-08-23%2020-40-26-1500h.png"
+                      class="navbar-logo"
+                    />
+                    <div data-thq="thq-close-menu" class="navbar-close-menu">
+                      <svg viewBox="0 0 1024 1024" class="navbar-icon12">
+                        <path
+                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <nav class="navbar-links2">
+                    <a
+                      href="#Description_principale"
+                      class="navbar-link12 thq-link thq-body-small"
+                    >
+                      <fragment class="home-fragment10">
+                        <span class="home-text10">Le gîte</span>
+                      </fragment>
+                    </a>
+                    <a
+                      href="#Equipements"
+                      class="navbar-link22 thq-link thq-body-small"
+                    >
+                      <fragment class="home-fragment11">
+                        <span class="home-text11">Equipements</span>
+                      </fragment>
+                    </a>
+                    <a
+                      href="#Activites"
+                      class="navbar-link32 thq-link thq-body-small"
+                    >
+                      <fragment class="home-fragment12">
+                        <span class="home-text12">Activités</span>
+                      </fragment>
+                    </a>
+                    <a
+                      href="#Photos_slider"
+                      class="navbar-link42 thq-link thq-body-small"
+                    >
+                      <fragment class="home-fragment13">
+                        <span class="home-text13">Photos</span>
+                      </fragment>
+                    </a>
+                    <a
+                      href="#Contact"
+                      class="navbar-link52 thq-link thq-body-small"
+                    >
+                      <fragment class="home-fragment14">
+                        <span class="home-text14">Contact</span>
+                      </fragment>
+                    </a>
+                  </nav>
+                </div>
+                <div class="navbar-icon-group">
+                  <svg
+                    viewBox="0 0 950.8571428571428 1024"
+                    class="thq-icon-x-small"
+                  >
+                    <path
+                      d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="thq-icon-x-small"
+                  >
+                    <path
+                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 602.2582857142856 1024"
+                    class="thq-icon-x-small"
+                  >
+                    <path
+                      d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </header>
+          </header>
+        </navbar-wrapper>
+        <descriptionprincipale-wrapper
+          class="descriptionprincipale-wrapper"
+          rootclassname="descriptionprincipaleundefined"
+        >
+          <!--Descriptionprincipale component-->
+          <div
+            id="Description_principale"
+            class="descriptionprincipale-gallery3 thq-section-padding descriptionprincipaleroot-class-name"
+          >
+            <div class="descriptionprincipale-max-width thq-section-max-width">
+              <div class="descriptionprincipale-section-title">
+                <div class="descriptionprincipale-container1">
+                  <img
+                    alt="image"
+                    src="public/almond_logo_tilted.svg"
+                    class="descriptionprincipale-image"
+                  />
+                  <h2 class="descriptionprincipale-text1 thq-heading-2">
+                    <fragment class="home-fragment16">
+                      <span class="home-text16">Le gîte</span>
+                    </fragment>
+                  </h2>
+                </div>
+                <span class="descriptionprincipale-text2 thq-body-large">
+                  <fragment class="home-fragment15">
+                    <span class="home-text15">
+                      Situé sur un terrain clos de 4000 m² richement arboré
+                      (amandiers, kaki, jujubier, rosiers, oliviers, noyers,
+                      cyprès…), le gîte donne sur une oliveraie bordée de vignes
+                      avec vue sur le versant sud du Mont Ventoux. Il s’ouvre
+                      sur une chambre de 13,5m², avec un coin cuisine séparé et
+                      une salle de bain (douche, lavabo, WC). Vous bénéficiez
+                      d’une terrasse privative à l’ombre de pins centenaires et
+                      d’un plaqueminier.
+                    </span>
+                  </fragment>
+                </span>
+              </div>
+              <div class="descriptionprincipale-content">
+                <div class="descriptionprincipale-container2">
+                  <img
+                    alt="Image 1"
+                    src="https://images.unsplash.com/photo-1635522936173-b67a2d744816?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDd8fHByb3ZlbmNlJTIwaG91c2V8ZW58MHx8fHwxNzU1ODA1MjUwfDA&amp;ixlib=rb-4.1.0&amp;w=1500"
+                    class="descriptionprincipale-image1 thq-img-ratio-4-3"
+                  />
+                </div>
+              </div>
+            </div>
+            <hr class="descriptionprincipale-separator" />
+          </div>
+        </descriptionprincipale-wrapper>
+        <descriptionssecondaires-wrapper
+          class="descriptionssecondaires-wrapper"
+          rootclassname="descriptionssecondairesundefined"
+        >
+          <!--Descriptionssecondaires component-->
+          <div
+            class="descriptionssecondaires-contact11 thq-section-padding descriptionssecondairesroot-class-name"
+          >
+            <div class="descriptionssecondaires-section-title">
+              <div class="descriptionssecondaires-container">
+                <img
+                  alt="image"
+                  src="public/almond_logo_tilted.svg"
+                  class="descriptionssecondaires-image1"
+                />
+                <h2 class="descriptionssecondaires-text1 thq-heading-2">
+                  <fragment class="home-fragment17">
+                    <span class="home-text17">Descriptions</span>
+                  </fragment>
+                </h2>
+              </div>
+            </div>
+            <div
+              class="descriptionssecondaires-max-width thq-section-max-width"
+            >
+              <div class="descriptionssecondaires-row1 thq-card thq-flex-row">
+                <div class="descriptionssecondaires-content1">
+                  <h2 class="thq-heading-2">
+                    <fragment class="home-fragment18">
+                      <span class="home-text18">Le logement</span>
+                    </fragment>
+                  </h2>
+                  <span
+                    class="descriptionssecondaires-feature1-description1 thq-body-small"
+                  >
+                    <fragment class="home-fragment20">
+                      <span class="home-text20">
+                        Situé sur un terrain clos de 4000 m² richement arboré
+                        (amandiers, kaki, jujubier, rosiers, oliviers, noyers,
+                        cyprès…), le gîte donne sur une oliveraie bordée de
+                        vignes avec vue sur le versant sud du Mont Ventoux. Il
+                        s’ouvre sur une chambre de 13,5m², avec un coin cuisine
+                        séparé et une salle de bain (douche, lavabo, WC). Vous
+                        bénéficiez d’une terrasse privative à l’ombre de pins
+                        centenaires et d’un plaqueminier.
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+                <div class="descriptionssecondaires-content2">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1668638281369-16cda2ad248b?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDR8fGxhdmVuZGVyJTIwaG91c2V8ZW58MHx8fHwxNzU1ODEzNjg2fDA&amp;ixlib=rb-4.1.0&amp;w=1500"
+                    class="descriptionssecondaires-image2"
+                  />
+                </div>
+              </div>
+              <div class="descriptionssecondaires-row2 thq-card thq-flex-row">
+                <div class="descriptionssecondaires-content3">
+                  <img
+                    alt="image"
+                    src="https://images.unsplash.com/photo-1649835580791-e12ed938fe11?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEyfHxuaWNlJTIwZ3V5fGVufDB8fHx8MTc1NTgwNTk4MXww&amp;ixlib=rb-4.1.0&amp;w=1500"
+                    class="descriptionssecondaires-image3"
+                  />
+                </div>
+                <div class="descriptionssecondaires-content4">
+                  <h2 class="thq-heading-2">
+                    <fragment class="home-fragment19">
+                      <span class="home-text19">Le logement</span>
+                    </fragment>
+                  </h2>
+                  <span
+                    class="descriptionssecondaires-feature1-description2 thq-body-small"
+                  >
+                    <fragment class="home-fragment21">
+                      <span class="home-text21">
+                        Situé sur un terrain clos de 4000 m² richement arboré
+                        (amandiers, kaki, jujubier, rosiers, oliviers, noyers,
+                        cyprès…), le gîte donne sur une oliveraie bordée de
+                        vignes avec vue sur le versant sud du Mont Ventoux. Il
+                        s’ouvre sur une chambre de 13,5m², avec un coin cuisine
+                        séparé et une salle de bain (douche, lavabo, WC). Vous
+                        bénéficiez d’une terrasse privative à l’ombre de pins
+                        centenaires et d’un plaqueminier.
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <hr class="descriptionssecondaires-separator" />
+          </div>
+        </descriptionssecondaires-wrapper>
+        <equipements-wrapper
+          class="equipements-wrapper"
+          rootclassname="equipementsundefined"
+        >
+          <!--Equipements component-->
+          <div
+            id="Equipements"
+            class="equipements-contact11 thq-section-padding equipementsroot-class-name"
+          >
+            <div class="equipements-section-title">
+              <div class="equipements-container10">
+                <img
+                  alt="image"
+                  src="public/almond_logo_tilted.svg"
+                  class="equipements-image"
+                />
+                <h2 class="equipements-text10 thq-heading-2">
+                  <fragment class="home-fragment30">
+                    <span class="home-text30">Equipements</span>
+                  </fragment>
+                </h2>
+              </div>
+            </div>
+            <div class="equipements-max-width thq-section-max-width">
+              <div class="equipements-row thq-card thq-flex-row">
+                <div class="list_equipement_container">
+                  <h3 class="logo_title">
+                    <fragment class="home-fragment22">
+                      <span class="home-text22">Cuisine</span>
+                    </fragment>
+                  </h3>
+                  <ul class="list list_equipement">
+                    <li class="list-item logo_row">
+                      <div class="equipements-container11">
+                        <div class="logo_container">
+                          <svg
+                            width="56"
+                            height="56"
+                            viewBox="0 0 20 20"
+                            class="logo_item"
+                          >
+                            <path
+                              d="M13.5 3a2.5 2.5 0 0 1 2.495 2.336L16 5.5v2.55a2.5 2.5 0 0 1 1.994 2.279L18 10.5v6a.5.5 0 0 1-.992.09L17 16.5V14H3v2.5a.5.5 0 0 1-.992.09L2 16.5v-6a2.5 2.5 0 0 1 2-2.45V5.5a2.5 2.5 0 0 1 2.336-2.495L6.5 3zm2 6h-11a1.5 1.5 0 0 0-1.493 1.355L3 10.5V13h14v-2.5a1.5 1.5 0 0 0-1.355-1.493zm-2-5h-7a1.5 1.5 0 0 0-1.493 1.356L5 5.5V8h1v-.5a.5.5 0 0 1 .5-.5H9a.5.5 0 0 1 .5.5V8h1v-.5A.5.5 0 0 1 11 7h2.5a.5.5 0 0 1 .5.5V8h1V5.5a1.5 1.5 0 0 0-1.355-1.493z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="equipements-container13 container_text">
+                          <span class="equipements-text12 logo_text">
+                            <fragment class="home-fragment25">
+                              <span class="home-text25">Lit en 140</span>
+                            </fragment>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-item logo_row equipements-li2">
+                      <div class="equipements-container14">
+                        <div class="logo_container">
+                          <svg
+                            width="56"
+                            height="56"
+                            viewBox="0 0 20 20"
+                            class="logo_item"
+                          >
+                            <path
+                              d="M13.5 3a2.5 2.5 0 0 1 2.495 2.336L16 5.5v2.55a2.5 2.5 0 0 1 1.994 2.279L18 10.5v6a.5.5 0 0 1-.992.09L17 16.5V14H3v2.5a.5.5 0 0 1-.992.09L2 16.5v-6a2.5 2.5 0 0 1 2-2.45V5.5a2.5 2.5 0 0 1 2.336-2.495L6.5 3zm2 6h-11a1.5 1.5 0 0 0-1.493 1.355L3 10.5V13h14v-2.5a1.5 1.5 0 0 0-1.355-1.493zm-2-5h-7a1.5 1.5 0 0 0-1.493 1.356L5 5.5V8h1v-.5a.5.5 0 0 1 .5-.5H9a.5.5 0 0 1 .5.5V8h1v-.5A.5.5 0 0 1 11 7h2.5a.5.5 0 0 1 .5.5V8h1V5.5a1.5 1.5 0 0 0-1.355-1.493z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="equipements-container16 container_text">
+                          <span class="equipements-text13 logo_text">
+                            <fragment class="home-fragment26">
+                              <span class="home-text26">Lit en 140</span>
+                            </fragment>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-item logo_row equipements-li3">
+                      <div class="equipements-container17">
+                        <div class="logo_container">
+                          <svg
+                            width="56"
+                            height="56"
+                            viewBox="0 0 20 20"
+                            class="logo_item"
+                          >
+                            <path
+                              d="M13.5 3a2.5 2.5 0 0 1 2.495 2.336L16 5.5v2.55a2.5 2.5 0 0 1 1.994 2.279L18 10.5v6a.5.5 0 0 1-.992.09L17 16.5V14H3v2.5a.5.5 0 0 1-.992.09L2 16.5v-6a2.5 2.5 0 0 1 2-2.45V5.5a2.5 2.5 0 0 1 2.336-2.495L6.5 3zm2 6h-11a1.5 1.5 0 0 0-1.493 1.355L3 10.5V13h14v-2.5a1.5 1.5 0 0 0-1.355-1.493zm-2-5h-7a1.5 1.5 0 0 0-1.493 1.356L5 5.5V8h1v-.5a.5.5 0 0 1 .5-.5H9a.5.5 0 0 1 .5.5V8h1v-.5A.5.5 0 0 1 11 7h2.5a.5.5 0 0 1 .5.5V8h1V5.5a1.5 1.5 0 0 0-1.355-1.493z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="equipements-container19 container_text">
+                          <span class="equipements-text14 logo_text">
+                            <fragment class="home-fragment27">
+                              <span class="home-text27">Lit en 140</span>
+                            </fragment>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="list_equipement_container">
+                  <h3 class="logo_title">
+                    <fragment class="home-fragment23">
+                      <span class="home-text23">Cuisine</span>
+                    </fragment>
+                  </h3>
+                  <ul class="list list_equipement">
+                    <li class="list-item logo_row">
+                      <div class="equipements-container20">
+                        <div class="logo_container">
+                          <svg
+                            width="56"
+                            height="56"
+                            viewBox="0 0 20 20"
+                            class="logo_item"
+                          >
+                            <path
+                              d="M13.5 3a2.5 2.5 0 0 1 2.495 2.336L16 5.5v2.55a2.5 2.5 0 0 1 1.994 2.279L18 10.5v6a.5.5 0 0 1-.992.09L17 16.5V14H3v2.5a.5.5 0 0 1-.992.09L2 16.5v-6a2.5 2.5 0 0 1 2-2.45V5.5a2.5 2.5 0 0 1 2.336-2.495L6.5 3zm2 6h-11a1.5 1.5 0 0 0-1.493 1.355L3 10.5V13h14v-2.5a1.5 1.5 0 0 0-1.355-1.493zm-2-5h-7a1.5 1.5 0 0 0-1.493 1.356L5 5.5V8h1v-.5a.5.5 0 0 1 .5-.5H9a.5.5 0 0 1 .5.5V8h1v-.5A.5.5 0 0 1 11 7h2.5a.5.5 0 0 1 .5.5V8h1V5.5a1.5 1.5 0 0 0-1.355-1.493z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="equipements-container22 container_text">
+                          <span class="equipements-text16 logo_text">
+                            <fragment class="home-fragment28">
+                              <span class="home-text28">Lit en 140</span>
+                            </fragment>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-item logo_row equipements-li5">
+                      <div class="equipements-container23">
+                        <div class="logo_container">
+                          <svg
+                            width="56"
+                            height="56"
+                            viewBox="0 0 20 20"
+                            class="logo_item"
+                          >
+                            <path
+                              d="M13.5 3a2.5 2.5 0 0 1 2.495 2.336L16 5.5v2.55a2.5 2.5 0 0 1 1.994 2.279L18 10.5v6a.5.5 0 0 1-.992.09L17 16.5V14H3v2.5a.5.5 0 0 1-.992.09L2 16.5v-6a2.5 2.5 0 0 1 2-2.45V5.5a2.5 2.5 0 0 1 2.336-2.495L6.5 3zm2 6h-11a1.5 1.5 0 0 0-1.493 1.355L3 10.5V13h14v-2.5a1.5 1.5 0 0 0-1.355-1.493zm-2-5h-7a1.5 1.5 0 0 0-1.493 1.356L5 5.5V8h1v-.5a.5.5 0 0 1 .5-.5H9a.5.5 0 0 1 .5.5V8h1v-.5A.5.5 0 0 1 11 7h2.5a.5.5 0 0 1 .5.5V8h1V5.5a1.5 1.5 0 0 0-1.355-1.493z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="equipements-container25 container_text">
+                          <span class="equipements-text17 logo_text">
+                            <fragment class="home-fragment31">
+                              <span class="home-text31">Lit en 140</span>
+                            </fragment>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-item logo_row equipements-li6">
+                      <div class="equipements-container26">
+                        <div class="logo_container">
+                          <svg
+                            width="56"
+                            height="56"
+                            viewBox="0 0 20 20"
+                            class="logo_item"
+                          >
+                            <path
+                              d="M13.5 3a2.5 2.5 0 0 1 2.495 2.336L16 5.5v2.55a2.5 2.5 0 0 1 1.994 2.279L18 10.5v6a.5.5 0 0 1-.992.09L17 16.5V14H3v2.5a.5.5 0 0 1-.992.09L2 16.5v-6a2.5 2.5 0 0 1 2-2.45V5.5a2.5 2.5 0 0 1 2.336-2.495L6.5 3zm2 6h-11a1.5 1.5 0 0 0-1.493 1.355L3 10.5V13h14v-2.5a1.5 1.5 0 0 0-1.355-1.493zm-2-5h-7a1.5 1.5 0 0 0-1.493 1.356L5 5.5V8h1v-.5a.5.5 0 0 1 .5-.5H9a.5.5 0 0 1 .5.5V8h1v-.5A.5.5 0 0 1 11 7h2.5a.5.5 0 0 1 .5.5V8h1V5.5a1.5 1.5 0 0 0-1.355-1.493z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="equipements-container28 container_text">
+                          <span class="equipements-text18 logo_text">
+                            <fragment class="home-fragment33">
+                              <span class="home-text33">Lit en 140</span>
+                            </fragment>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="list_equipement_container">
+                  <h3 class="logo_title">
+                    <fragment class="home-fragment24">
+                      <span class="home-text24">Cuisine</span>
+                    </fragment>
+                  </h3>
+                  <ul class="list list_equipement">
+                    <li class="list-item logo_row">
+                      <div class="equipements-container29">
+                        <div class="logo_container">
+                          <svg
+                            width="56"
+                            height="56"
+                            viewBox="0 0 20 20"
+                            class="logo_item"
+                          >
+                            <path
+                              d="M13.5 3a2.5 2.5 0 0 1 2.495 2.336L16 5.5v2.55a2.5 2.5 0 0 1 1.994 2.279L18 10.5v6a.5.5 0 0 1-.992.09L17 16.5V14H3v2.5a.5.5 0 0 1-.992.09L2 16.5v-6a2.5 2.5 0 0 1 2-2.45V5.5a2.5 2.5 0 0 1 2.336-2.495L6.5 3zm2 6h-11a1.5 1.5 0 0 0-1.493 1.355L3 10.5V13h14v-2.5a1.5 1.5 0 0 0-1.355-1.493zm-2-5h-7a1.5 1.5 0 0 0-1.493 1.356L5 5.5V8h1v-.5a.5.5 0 0 1 .5-.5H9a.5.5 0 0 1 .5.5V8h1v-.5A.5.5 0 0 1 11 7h2.5a.5.5 0 0 1 .5.5V8h1V5.5a1.5 1.5 0 0 0-1.355-1.493z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="equipements-container31 container_text">
+                          <span class="equipements-text20 logo_text">
+                            <fragment class="home-fragment29">
+                              <span class="home-text29">Lit en 140</span>
+                            </fragment>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-item logo_row equipements-li8">
+                      <div class="equipements-container32">
+                        <div class="logo_container">
+                          <svg
+                            width="56"
+                            height="56"
+                            viewBox="0 0 20 20"
+                            class="logo_item"
+                          >
+                            <path
+                              d="M13.5 3a2.5 2.5 0 0 1 2.495 2.336L16 5.5v2.55a2.5 2.5 0 0 1 1.994 2.279L18 10.5v6a.5.5 0 0 1-.992.09L17 16.5V14H3v2.5a.5.5 0 0 1-.992.09L2 16.5v-6a2.5 2.5 0 0 1 2-2.45V5.5a2.5 2.5 0 0 1 2.336-2.495L6.5 3zm2 6h-11a1.5 1.5 0 0 0-1.493 1.355L3 10.5V13h14v-2.5a1.5 1.5 0 0 0-1.355-1.493zm-2-5h-7a1.5 1.5 0 0 0-1.493 1.356L5 5.5V8h1v-.5a.5.5 0 0 1 .5-.5H9a.5.5 0 0 1 .5.5V8h1v-.5A.5.5 0 0 1 11 7h2.5a.5.5 0 0 1 .5.5V8h1V5.5a1.5 1.5 0 0 0-1.355-1.493z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="equipements-container34 container_text">
+                          <span class="equipements-text21 logo_text">
+                            <fragment class="home-fragment32">
+                              <span class="home-text32">Lit en 140</span>
+                            </fragment>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-item logo_row equipements-li9">
+                      <div class="equipements-container35">
+                        <div class="logo_container">
+                          <svg
+                            width="56"
+                            height="56"
+                            viewBox="0 0 20 20"
+                            class="logo_item"
+                          >
+                            <path
+                              d="M13.5 3a2.5 2.5 0 0 1 2.495 2.336L16 5.5v2.55a2.5 2.5 0 0 1 1.994 2.279L18 10.5v6a.5.5 0 0 1-.992.09L17 16.5V14H3v2.5a.5.5 0 0 1-.992.09L2 16.5v-6a2.5 2.5 0 0 1 2-2.45V5.5a2.5 2.5 0 0 1 2.336-2.495L6.5 3zm2 6h-11a1.5 1.5 0 0 0-1.493 1.355L3 10.5V13h14v-2.5a1.5 1.5 0 0 0-1.355-1.493zm-2-5h-7a1.5 1.5 0 0 0-1.493 1.356L5 5.5V8h1v-.5a.5.5 0 0 1 .5-.5H9a.5.5 0 0 1 .5.5V8h1v-.5A.5.5 0 0 1 11 7h2.5a.5.5 0 0 1 .5.5V8h1V5.5a1.5 1.5 0 0 0-1.355-1.493z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div class="equipements-container37 container_text">
+                          <span class="equipements-text22 logo_text">
+                            <fragment class="home-fragment34">
+                              <span class="home-text34">Lit en 140</span>
+                            </fragment>
+                          </span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr class="equipements-separator" />
+          </div>
+        </equipements-wrapper>
+        <activites-wrapper
+          class="activites-wrapper"
+          rootclassname="activitesundefined"
+        >
+          <!--Activites component-->
+          <div
+            id="Activites"
+            class="activites-layout349 thq-section-padding activitesroot-class-name"
+          >
+            <div class="activites-section-title">
+              <div class="activites-container1">
+                <img
+                  alt="image"
+                  src="public/almond_logo_tilted.svg"
+                  class="activites-image1"
+                />
+                <h2 class="activites-text10 thq-heading-2">
+                  <fragment class="home-fragment35">
+                    <span class="home-text35">Activités</span>
+                  </fragment>
+                </h2>
+              </div>
+            </div>
+            <div class="activites-max-width thq-section-max-width">
+              <div class="activites-container2 thq-grid-auto-300">
+                <div
+                  class="activity-card thq-card activity-card-shadow thq-flex-column"
+                >
+                  <img
+                    alt="Professional Services Image"
+                    src="public/climbing_white_only_squared-200h.png"
+                    class="activites-image2"
+                  />
+                  <h2 class="thq-heading-2">
+                    <fragment class="home-fragment36">
+                      <span class="home-text36">Escalade</span>
+                    </fragment>
+                  </h2>
+                  <span class="activites-text12 thq-body-small">
+                    <fragment class="home-fragment40">
+                      <span class="home-text40">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+                <div
+                  class="activites-card2 activity-card thq-card activity-card-shadow thq-flex-column"
+                >
+                  <img
+                    alt="Portfolio Showcase Image"
+                    src="public/hiking_white_only_squared-200h.png"
+                    class="activites-image3 thq-img-ratio-1-1 thq-img-round"
+                  />
+                  <h2 class="thq-heading-2">
+                    <fragment class="home-fragment37">
+                      <span class="home-text37">Randonnée</span>
+                    </fragment>
+                  </h2>
+                  <span class="activites-text14 thq-body-small">
+                    <fragment class="home-fragment41">
+                      <span class="home-text41">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+                <div
+                  class="activity-card thq-card activity-card-shadow thq-flex-column"
+                >
+                  <img
+                    alt="Contact Options Image"
+                    src="public/cycling_white_only_squared-200h.png"
+                    class="activites-image4 thq-img-ratio-1-1 thq-img-round"
+                  />
+                  <h1 class="thq-heading-2 activites-text15">
+                    <fragment class="home-fragment38">
+                      <span class="home-text38">Cyclisme</span>
+                    </fragment>
+                  </h1>
+                  <span class="activites-text16 thq-body-small">
+                    <fragment class="home-fragment42">
+                      <span class="home-text42">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+                <div
+                  class="activites-card4 activity-card thq-card activity-card-shadow thq-flex-column"
+                >
+                  <img
+                    alt="Account Management Image"
+                    src="public/tourism_white_only_squared-200h.png"
+                    class="activites-image5 thq-img-ratio-1-1 thq-img-round"
+                  />
+                  <h1 class="thq-heading-2">
+                    <fragment class="home-fragment39">
+                      <span class="home-text39">Culture</span>
+                    </fragment>
+                  </h1>
+                  <span class="activites-text18 thq-body-small">
+                    <fragment class="home-fragment43">
+                      <span class="home-text43">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </span>
+                    </fragment>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <hr class="activites-separator" />
+          </div>
+        </activites-wrapper>
+        <photosslider-wrapper
+          class="photosslider-wrapper"
+          rootclassname="photossliderundefined"
+        >
+          <!--Photosslider component-->
+          <div
+            id="Photos_slider"
+            class="photosslider-gallery3 thq-section-padding photossliderroot-class-name"
+          >
+            <div class="photosslider-section-title">
+              <div class="photosslider-container1">
+                <img
+                  alt="image"
+                  src="public/almond_logo_tilted.svg"
+                  class="photosslider-image1"
+                />
+                <h2 class="photosslider-text1 thq-heading-2">
+                  <fragment class="home-fragment44">
+                    <span class="home-text44">Photos</span>
+                  </fragment>
+                </h2>
+              </div>
+            </div>
+            <div class="photosslider-max-width thq-section-max-width">
+              <div class="photosslider-container2">
+                <div class="photosslider-content">
+                  <div
+                    data-thq="slider"
+                    data-navigation="true"
+                    data-pagination="true"
+                    class="photosslider-slider swiper"
+                  >
+                    <div data-thq="slider-wrapper" class="swiper-wrapper">
+                      <div
+                        data-thq="slider-slide"
+                        class="photosslider-slider-slide1 swiper-slide"
+                      >
+                        <img
+                          alt="Professional Services Portfolio"
+                          src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NTgwNzg2OHw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                          class="photosslider-image2 thq-img-ratio-4-3"
+                        />
+                      </div>
+                      <div
+                        data-thq="slider-slide"
+                        class="photosslider-slider-slide2 swiper-slide"
+                      >
+                        <img
+                          alt="Impressive Portfolio Examples"
+                          src="https://images.unsplash.com/photo-1580127645995-d43fe9598711?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NTgwNzg2OHw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                          class="photosslider-image3 thq-img-ratio-4-3"
+                        />
+                      </div>
+                      <div
+                        data-thq="slider-slide"
+                        class="photosslider-slider-slide3 swiper-slide"
+                      >
+                        <img
+                          alt="Accommodation Options Portfolio"
+                          src="https://images.unsplash.com/photo-1673515335513-8c6f8e686634?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTc1NTgwNzg2OHw&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
+                          class="photosslider-image4 thq-img-ratio-4-3"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      data-thq="slider-button-prev"
+                      class="swiper-button-prev"
+                    ></div>
+                    <div
+                      data-thq="slider-button-next"
+                      class="swiper-button-next"
+                    ></div>
+                    <div
+                      data-thq="slider-pagination"
+                      class="photosslider-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+                    >
+                      <div
+                        data-thq="slider-pagination-bullet"
+                        class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                      ></div>
+                      <div
+                        data-thq="slider-pagination-bullet"
+                        class="swiper-pagination-bullet"
+                      ></div>
+                      <div
+                        data-thq="slider-pagination-bullet"
+                        class="swiper-pagination-bullet"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </photosslider-wrapper>
+        <contact-wrapper
+          class="contact-wrapper"
+          rootclassname="contactundefined"
+        >
+          <!--Contact component-->
+          <div
+            id="Contact"
+            class="contact-contact11 thq-section-padding contactroot-class-name"
+          >
+            <div class="contact-section-title">
+              <div class="contact-container1">
+                <img
+                  alt="image"
+                  src="public/almond_logo_tilted.svg"
+                  class="contact-image"
+                />
+                <h2 class="contact-text10 thq-heading-2">
+                  <fragment class="home-fragment48">
+                    <span class="home-text48">Nous contacter</span>
+                  </fragment>
+                </h2>
+              </div>
+            </div>
+            <div class="contact-max-width thq-section-max-width">
+              <div class="contact-row thq-card thq-flex-row">
+                <div class="contact-content1">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="contact-icon1 thq-icon-small"
+                  >
+                    <path
+                      d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"
+                    ></path>
+                  </svg>
+                  <div class="contact-contact-info1">
+                    <h3 class="thq-heading-3">Email</h3>
+                    <span class="contact-email thq-body-small">
+                      <fragment class="home-fragment45">
+                        <span class="home-text45">ybeaudenon@wanadoo.fr</span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+                <div class="contact-content2">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="contact-icon3 thq-icon-small"
+                  >
+                    <path
+                      d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"
+                    ></path>
+                  </svg>
+                  <div class="contact-contact-info2">
+                    <h3 class="thq-heading-3">Phone</h3>
+                    <span class="contact-phone thq-body-small">
+                      <fragment class="home-fragment46">
+                        <span class="home-text46">06 85 31 16 93</span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+                <div class="contact-content3">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    class="contact-icon5 thq-icon-small"
+                  >
+                    <path
+                      d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"
+                    ></path>
+                  </svg>
+                  <div class="contact-contact-info3">
+                    <h3 class="thq-heading-3">Office</h3>
+                    <span class="contact-address thq-body-small">
+                      <fragment class="home-fragment47">
+                        <span class="home-text47">
+                          699 Chemin de Faverand, 84380 Mazan
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-content4">
+                <form class="contact-form thq-card">
+                  <div class="contact-container2">
+                    <div class="contact-input1">
+                      <label
+                        for="contact-form-11-first-name"
+                        class="thq-body-small"
+                      >
+                        Prénom
+                      </label>
+                      <input
+                        type="text"
+                        id="contact-form-11-first-name"
+                        placeholder="Prénom"
+                        class="thq-input"
+                      />
+                    </div>
+                    <div class="contact-input2">
+                      <label
+                        for="contact-form-11-last-name"
+                        class="thq-body-small"
+                      >
+                        Nom
+                      </label>
+                      <input
+                        type="text"
+                        id="contact-form-11-last-name"
+                        placeholder="Nom"
+                        class="thq-input"
+                      />
+                    </div>
+                  </div>
+                  <div class="contact-input3">
+                    <label for="contact-form-11-email" class="thq-body-small">
+                      Email
+                    </label>
+                    <input
+                      type="text"
+                      id="contact-form-11-email"
+                      required="true"
+                      placeholder="Email"
+                      class="contact-text-input3 thq-input"
+                    />
+                  </div>
+                  <div class="contact-input4">
+                    <label for="contact-form-11-message" class="thq-body-small">
+                      Message
+                    </label>
+                    <textarea
+                      id="contact-form-11-message"
+                      rows="3"
+                      placeholder="Taper votre message"
+                      class="thq-input contact-textarea"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="thq-button-filled contact-button"
+                  >
+                    <span class="thq-body-small">
+                      <fragment class="home-fragment49">
+                        <span class="home-text49">Envoyer</span>
+                      </fragment>
+                    </span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </contact-wrapper>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
   </body>
 </html>

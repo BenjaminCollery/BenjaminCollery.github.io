@@ -1,0 +1,114 @@
+.descriptionprincipale-gallery3 {
+  gap: var(--dl-layout-space-fiveunits);
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 0px;
+  padding-top: var(--dl-layout-space-unit);
+  margin-right: 0px;
+  padding-left: var(--dl-layout-space-fiveunits);
+  padding-right: var(--dl-layout-space-fiveunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-layout-space-unit);
+  background-color: var(--dl-color-maintheme-menu-background);
+}
+ 
+.descriptionprincipale-max-width {
+  gap: var(--dl-layout-space-twounits);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.descriptionprincipale-section-title {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  width: auto;
+  display: flex;
+  max-width: 800px;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+ 
+.descriptionprincipale-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+ 
+.descriptionprincipale-image {
+  width: 30px;
+  height: 50px;
+  object-fit: cover;
+}
+ 
+.descriptionprincipale-text1 {
+  text-align: center;
+}
+ 
+.descriptionprincipale-text2 {
+  text-align: justify;
+}
+ 
+.descriptionprincipale-content {
+  gap: var(--dl-layout-space-twounits);
+  width: 100%;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+ 
+.descriptionprincipale-container2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.descriptionprincipale-image1 {
+  box-shadow: -2px -2px 5px 0px #78797a, 2px 2px 5px 0px #78797a;
+}
+ 
+.descriptionprincipale-separator {
+  width: 100%;
+  height: 1px;
+  background-color: #595959;
+}
+ 
+.descriptionprincipale-fragment1 {
+  display: contents;
+}
+ 
+.descriptionprincipale-text3 {
+  display: inline-block;
+}
+ 
+.descriptionprincipale-fragment2 {
+  display: contents;
+}
+ 
+.descriptionprincipale-text4 {
+  display: inline-block;
+}
+ 
+.descriptionprincipaleroot-class-name {
+  z-index: 10;
+  background-color: var(--dl-color-maintheme-menu-background);
+}
+ 
+@media(max-width: 991px) {
+  .descriptionprincipale-content {
+    align-items: center;
+    flex-direction: column;
+  }
+}
