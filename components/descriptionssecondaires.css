@@ -45,12 +45,13 @@
  
 .descriptionssecondaires-row1 {
   align-items: center;
+  padding-right: 0px;
   flex-direction: row;
   justify-content: space-between;
 }
  
 .descriptionssecondaires-content1 {
-  width: 50%;
+  width: 40%;
   display: flex;
   align-self: center;
   align-items: center;
@@ -59,10 +60,11 @@
  
 .descriptionssecondaires-feature1-description1 {
   font-size: 20px;
+  text-align: justify;
 }
  
 .descriptionssecondaires-content2 {
-  width: 50%;
+  width: 60%;
   height: 100%;
   display: flex;
   align-self: center;
@@ -75,7 +77,7 @@
   height: auto;
   margin: auto;
   position: sticky;
-  max-width: 360px;
+  max-width: 90%;
   box-shadow: -2px -2px 5px 0px #78797a, 2px 2px 5px 0px #78797a;
   max-height: 360px;
   object-fit: cover;
@@ -84,12 +86,13 @@
  
 .descriptionssecondaires-row2 {
   align-items: center;
+  padding-left: 0px;
   flex-direction: row;
   justify-content: space-between;
 }
  
 .descriptionssecondaires-content3 {
-  width: 50%;
+  width: 60%;
   height: 100%;
   display: flex;
   align-self: center;
@@ -102,7 +105,7 @@
   height: auto;
   margin: auto;
   position: sticky;
-  max-width: 360px;
+  max-width: 90%;
   box-shadow: -2px -2px 5px 0px #78797a, 2px 2px 5px 0px #78797a;
   max-height: 360px;
   object-fit: cover;
@@ -110,7 +113,7 @@
 }
  
 .descriptionssecondaires-content4 {
-  width: 50%;
+  width: 40%;
   display: flex;
   align-self: center;
   align-items: center;
@@ -119,6 +122,7 @@
  
 .descriptionssecondaires-feature1-description2 {
   font-size: 20px;
+  text-align: justify;
 }
  
 .descriptionssecondaires-separator {
@@ -172,15 +176,18 @@
   background-color: var(--dl-color-maintheme-menu-background);
 }
  
+@media(max-width: 1200px) {
+  .descriptionssecondaires-content1 {
+    width: 40%;
+  }
+  .descriptionssecondaires-content2 {
+    width: 60%;
+  }
+}
+ 
 @media(max-width: 991px) {
   .descriptionssecondaires-max-width {
     height: 1000px;
-  }
-  .descriptionssecondaires-feature1-description1 {
-    text-align: justify;
-  }
-  .descriptionssecondaires-feature1-description2 {
-    text-align: justify;
   }
 }
  

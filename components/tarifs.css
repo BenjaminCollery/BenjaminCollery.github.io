@@ -1,0 +1,78 @@
+.tarifs-contact11 {
+  gap: var(--dl-layout-space-threeunits);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 5px 5px 0px #b3b2b2;
+  padding-top: var(--dl-layout-space-unit);
+  padding-left: var(--dl-layout-space-fiveunits);
+  padding-right: var(--dl-layout-space-fiveunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-layout-space-unit);
+  background-color: var(--dl-color-maintheme-menu-background);
+}
+ 
+.tarifs-section-title {
+  gap: var(--dl-layout-space-oneandhalfunits);
+  width: auto;
+  display: flex;
+  max-width: 800px;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+ 
+.tarifs-container {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+ 
+.tarifs-image {
+  width: 30px;
+  height: 50px;
+  object-fit: cover;
+}
+ 
+.tarifs-text1 {
+  text-align: center;
+}
+ 
+.tarifs-max-width {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.tarifs-text2 {
+  font-size: 20px;
+}
+ 
+.tarifs-fragment1 {
+  display: contents;
+}
+ 
+.tarifs-text3 {
+  display: inline-block;
+}
+ 
+.tarifs-fragment2 {
+  display: contents;
+}
+ 
+.tarifs-text4 {
+  display: inline-block;
+}
+ 
+.tarifsroot-class-name {
+  z-index: 1;
+}
+ 
+@media(max-width: 767px) {
+  .tarifs-contact11 {
+    padding-left: var(--dl-layout-space-unit);
+    padding-right: var(--dl-layout-space-unit);
+  }
+}
